@@ -657,7 +657,7 @@ a {
     height: auto;
     background-color: #f3f3f3;
     display: flex;
-    background-image: url(/img/bg-testimonial.png);
+    background-image: url("https://cdn.jsdelivr.net/gh/sam-tahiri/ATM@main/img/bg-testimonial.png");
     background-repeat: no-repeat;
     background-size: cover;
     padding-bottom: 100px;
