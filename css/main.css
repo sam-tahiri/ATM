@@ -78,13 +78,20 @@ a {
     font-size: 20px;
     position: relative;
     z-index: 99;
+    transition: 3s ease;
 }
 
 .header .header-position {
     position: fixed;
     background-color: var(--bg-color);
     width: 100%;
+    transition: 6s ease;
 }
+
+.header .header-position.sticky {
+    box-shadow: 0 0 10px var(--third-color);
+}
+
 .header .container {
     display: flex;
     justify-content: space-between;
@@ -115,12 +122,21 @@ a {
 }
 
 .header .container span > a {
-    width: 92px;
+    width: 95px;
     height: 39px;
     background-color: var(--secondry-color);
     color: var(--bg-color);
     padding: 8px 18px;
     border-radius: 8px;
+    transition: 0.5s ease;
+}
+
+.header .container span > a:hover {
+    background-color: var(--bg-color);
+    border: 2px solid  var(--secondry-color);
+    color: var(--secondry-color);
+    transition: 0.5s ease;
+    box-shadow: 0 0 5px var(--secondry-color);
 }
 
 /* End Header */
@@ -708,12 +724,29 @@ a {
 }
 
 .comments .comment {
+    position: relative;
     width: 420px;
     height: 235px;
     background-color: #e5e5e5;
     border-radius: 10px;
     display: flex;
     flex-wrap: wrap;
+}
+
+.comments .comment .fa-quote-right {
+    position: absolute;
+    color: var(--main-color);
+    top: 5px;
+    right: 8px;
+    font-size: 25px;
+}
+
+.comments .comment .fa-quote-left {
+    position: absolute;
+    color: var(--main-color);
+    bottom: 5px;
+    left: 8px;
+    font-size: 25px;
 }
 
 .comments .comment .user {
@@ -815,19 +848,11 @@ a {
 }
 
 
-.contact-info .btn-social .btn-face a {
-    color: var(--bg-color);
-}
-
-.contact-info .btn-social .btn-whats a {
-    color: #424242;
-}
-
 .contact-info .btn-social .btn-face .icon, .contact-info .btn-whats .icon {
     width: 30%;
     height: 100%;
     background-color: var(--secondry-color);
-    border-radius: 0 7px 7px 0;
+    border-radius: 0 8px 8px 0;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -837,20 +862,51 @@ a {
     background-color: transparent;
 }
 
-.contact-info .btn-social .btn-face .name-page, .contact-info .btn-whats .name-page {
+.contact-info .btn-social .btn-face .name-page,
+.contact-info .btn-social .btn-whats .name-page {
     width: 70%;
     height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 7px 0 0 7px;
+    border-radius: 8px 0 0 8px;
     padding: 13px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
+.contact-info .btn-social .btn-face:hover,
+.contact-info .btn-social .btn-whats:hover {
+    transition: 0.5s ease;
+    box-shadow: 0 0 10px var(--bg-color);
+    box-shadow: 0 0 20px var(--bg-color);
+    box-shadow: 0 0 40px var(--bg-color);
+}
+
 
 .contact-info .btn-social .btn-whats .name-page {
     background-color: var(--bg-color);
     color: var(--third-color);
 }
+
+.contact-info .btn-social .btn-face .name-page a, .contact-info .btn-whats .name-page a{
+    width: 103.24px;
+    height: 47.5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.5s;
+}
+
+
+.contact-info .btn-social .btn-face a {
+    color: var(--bg-color);
+}
+
+.contact-info .btn-social .btn-whats a {
+    color: #424242;
+}
+
+
+
 
 
 /* End Section Style contact-info */
