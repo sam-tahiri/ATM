@@ -499,6 +499,7 @@ a {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    overflow: hidden;
 }
 
 .features .container {
@@ -588,9 +589,6 @@ a {
     top: -9%;
 }
 
-.clear {
-    clear: both;
-}
 /* End Section Style Featurs */
 
 /* Start Section Style sec-banks */
@@ -941,7 +939,6 @@ a {
         width: 540px;
     }
 
-
     .title h3 {
         font-size: 40px;
     }
@@ -982,21 +979,90 @@ a {
     }
 
     /* ------------------------- features -------------------------- */
+    .features .container .title h3 {font-size: 40px;}
+    
+    .features .container .title p {font-size: 16px;}
+    .features .feature {
+        width: 331px !important;
+        height: 438px;
+        justify-content: center;
+    }
+
+
+    .features .feature .mine-title .fa-wallet {
+        padding: 6px;
+        border-radius: 50%;
+        font-size: 33px !important;
+        right: 13px !important;
+    }
+    
+    .features .feature .mine-title span {
+        padding: 0 20px 0 5px;
+        border-radius: 50px 0 0 50px;
+        font-size: 25px !important;
+
+    }
+    
     .feature .box-features {
-        align-self: center;
+        width: 300px !important;
+        height: 270px !important;
     }
-
+    
+    .feature .box-features div {
+        font-size: 20px !important;
+    }
+    .feature .box-features .fa-circle-check {
+        font-size: 47px !important;
+        padding-left: 20px;
+    }
+    
     .feature .box-features .fa-gear {
-        font-size: 20;
-        right: -3%;
-        top: -5%;
+        font-size: 25px !important;
+        right: -6%;
+        top: -7%;
     }
-
     /* ---------------------------- footer --------------------------*/
     .footer .copyright {
         font-size: 25px;
     }
 
+}
+
+@media (max-width: 280px) {
+    .container {
+        width: 250px !important;
+    }
+    .features .container .title h3 {font-size: 40px;}
+    
+    .features .container .title p {font-size: 16px;}
+
+    .features .feature {
+        max-width: 250px !important;
+    }
+
+    .features .feature .mine-title .fa-wallet {
+        font-size: 33px !important;
+        right: 13px !important;
+    }
+    
+    .features .feature .mine-title span {font-size: 17px !important;}
+    
+    .feature .box-features {
+        width: 250px !important;
+        height: 250px !important;
+    }
+    
+    .feature .box-features div {
+        font-size: 18px !important;
+    }
+    .feature .box-features .fa-circle-check {font-size: 30px !important;}
+    
+    .feature .box-features .fa-gear {
+        font-size: 25px !important;
+        right: -6%;
+        top: -7%;
+    }
+    
 }
 
 
@@ -1185,13 +1251,7 @@ a {
 
     /* ---------------------------------------------- */
     
-    .features {
-        height: auto;
-    }
-
-    .features .feature {
-        right: auto;
-    }
+    .features {height: auto;}
 
     /* ---------------------------- banks ----------------------------*/
 
@@ -1266,6 +1326,25 @@ a {
     .contact-info .btn-social .btn-face {
         margin-left: 10px;
     }
+    
+    .features {align-items: center;}
+
+    .features .feature {position: unset;}
+    
+
+    .features .feature .mine-title {
+        position: relative;
+        right: -13px;
+    }
+    
+    .features .feature .mine-title .fa-wallet {
+        font-size: 35px;
+        right: 15px;
+    }
+    
+    .features .feature .mine-title span {font-size: 30px;}
+    
+    .feature .box-features {align-self:center;}
     
 }
 
