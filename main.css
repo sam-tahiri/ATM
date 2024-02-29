@@ -1,0 +1,1391 @@
+/* Start Global Rules */
+* {
+    box-sizing: border-box;
+    direction: rtl;
+}
+
+@font-face {
+    font-family: "Hacen Tunisia" ;
+    src: url("font/Hacen Tunisia.ttf") format("ttf");
+}
+
+:root {
+    --main-color: #134792;
+    --secondry-color: #ff6d00;
+    --third-color: #7e7d7d;
+    --fourth-color: #a1b6d4;
+    --bg-color: #ffffff;
+    --main-transition: 3s;
+}
+
+body {
+    font-family: "Hacen Tunisia";
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+.title {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 0;
+}
+.title h3 {
+    font-size: 45px;
+    font-weight: normal;
+    margin-bottom: 35px;
+}
+
+.title p {
+    font-size: 35px;
+    text-align: center;
+    margin: 0;
+}
+
+
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+/* End Global Rules */
+
+
+/* start Header */
+
+.header {
+    width: 100%;
+    height: 68px;
+    background-color: var(--bg-color);
+    font-size: 20px;
+    position: relative;
+    z-index: 99;
+    transition: 3s ease;
+}
+
+.header .header-position {
+    position: fixed;
+    background-color: var(--bg-color);
+    width: 100%;
+    transition: 6s ease;
+}
+
+.header .header-position.sticky {
+    box-shadow: 0 0 10px var(--third-color);
+}
+
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.header .logo {
+    height: 60px;
+    padding: 3px 0;
+}
+
+.header .main-nav {
+    display: flex;
+}
+
+.header .main-nav > li > a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 68px;
+    padding: 0 32px;
+    color: var(--main-color);
+    transition: 0.5s;
+}
+.header .main-nav > li > a:hover{
+    color: var(--secondry-color);
+}
+
+.header .container span > a {
+    width: 95px;
+    height: 39px;
+    background-color: var(--secondry-color);
+    color: var(--bg-color);
+    padding: 8px 18px;
+    border-radius: 8px;
+    transition: 0.5s ease;
+}
+
+.header .container span > a:hover {
+    background-color: var(--bg-color);
+    border: 2px solid  var(--secondry-color);
+    color: var(--secondry-color);
+    transition: 0.5s ease;
+    box-shadow: 0 0 5px var(--secondry-color);
+}
+
+/* End Header */
+
+
+/* Start Media Screen */
+
+/* start style nav-phone */
+.header .nav-phone {
+    transition-duration: 0.3s;
+    transition-property: all;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    background-color: var(--secondry-color);
+    left: 0;
+    top: 40px;
+    display: none;
+    border-radius: 10px;
+    margin-top: 10px;   
+    margin-left: 15px;
+    text-align: center;
+    overflow: hidden;
+}
+
+.header .nav-phone li {
+    width: 100%;
+    height: 100%;
+}
+
+.header .nav-phone li a{
+    width: 100%;
+    height: 100%;
+    display: block;
+    color:  var(--bg-color);
+    padding: 20px 0;
+}
+
+.header .nav-phone li:hover{ background-color: #053c72;}
+
+.header .nav-phone li:hover > a{
+    color: var(--secondry-color);
+}
+
+.nav-phone.active {
+    visibility: visible;
+    display: flex;
+}
+
+/* End style nav-phone */
+
+/* Start Section Style Our Service */
+
+.our_service {
+    width: 100%;
+    height: auto;
+    display: flex;
+}
+
+.our_service .container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.our_service .container .title h3 {
+    color: var(--main-color);
+}
+
+.our_service .container .title p {
+    color: var(--third-color);
+}
+
+
+.our_service .container .services {
+    width: 100%;
+    height: 700px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.our_service .container .services .img-panner{
+    width: 47%;
+}
+
+.our_service .container .services .serv{
+    width: 47%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.our_service .container .services .serv div{
+    width: 223px;
+    height: 221px;
+    border: 2px solid var(--fourth-color);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.serv div {
+    text-align: center;
+    position: relative;
+}
+
+.serv div .sircle01, .sircle02 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.serv div .sircle01 {
+    width: 95px;
+    height: 95px;
+    border: 2px solid var(--fourth-color);
+    border-radius: 50%;
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translate(-50%, -50%);
+    background-color: var(--bg-color);
+}
+
+.serv div .sircle02 {
+    width: 80px;
+    height: 80px;
+    border: 2px solid var(--secondry-color);
+    border-radius: 50%;
+}
+
+.serv div .sircle01 .sircle02 > .icon {
+    font-size: 40px;
+    color: var(--main-color);
+}
+
+.serv div h4 {
+    font-size: 25px;
+    font-weight: normal;
+    color: var(--main-color);
+}
+
+.serv div p {
+    font-size: 20px;
+    color: var(--third-color);
+    margin: 0;
+} 
+
+/* End serv */
+
+.img-panner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.img-panner .img-sec {
+    width: 100%;
+    height: 584px;
+}
+/* End Section Style Our Service */
+
+
+/* Start Section Style Our Offices */
+
+.our_offices {
+    position: relative;
+    width: 100%;
+    height: 817px;
+    display: flex;
+    background-image: url("https://cdn.jsdelivr.net/gh/sam-tahiri/ATM@main/img/sec-our-office.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+.our_offices .container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.our_offices .container .title h3 {
+    color: var(--bg-color);
+    width: fit-content;
+    background-color: var(--secondry-color);
+    padding: 7px 35px;
+    margin: 26px 0;
+    border-radius: 60px;
+}
+.our_offices .container .title p {
+    color: var(--bg-color);
+    box-shadow: 10px;
+}
+
+.our_offices .offices {
+    display: flex;
+    flex-direction: column;
+}
+
+.our_offices .offices .content {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+
+.our_offices .offices .content .country {
+    height: 140px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.our_offices .offices .content:nth-child(1) .country {
+    width: calc(95% / 4);
+}
+
+.our_offices .offices .content .country .name_country {
+    color: var(--main-color);
+    font-size: 35px;
+}
+
+.our_offices .offices .content .country .name_country .fa-angle-left {
+    color: var(--secondry-color);
+}
+
+.our_offices .offices .content .country .name_street {
+    display: flex;
+    align-items: center;
+    color: var(--bg-color);
+    font-size: 25px;
+}
+
+.our_offices .offices .content .country .name_street .fa-minus {
+    color: var(--secondry-color);
+}
+
+.our_offices .offices .content:nth-child(2) .country  {
+    width: calc(95% / 3);
+}
+
+.our_offices .offices .content:nth-child(2) .country .streets {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.our_offices .offices .content:nth-child(3) {
+    margin-bottom: 0;
+}
+
+.our_offices .offices .content:nth-child(3) .country  {
+    width: calc(95% / 3);
+}
+
+/* End Section Style Our Offices */
+
+/* Start Section Style Method Payment */
+.method_payment {
+    width: 100%;
+    height: auto;
+    background-image: url("https://cdn.jsdelivr.net/gh/sam-tahiri/ATM@main/img/bg-payment.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right top;
+    display: flex;
+}
+
+.method_payment .container {
+    display: flex;
+    flex-direction: column;
+}
+
+.method_payment .container .title h3 {
+    color: var(--main-color);
+}
+
+.method_payment .container .title p {
+    color: var(--third-color);
+    box-shadow: 10px;
+
+}
+
+.m_p_r {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin: 50px 0;
+}
+
+.m_p_r img {
+    width: 300px;
+}
+
+.how_to_transfer, .status_transfer, .payment_receipt {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.m_p_r h3 {
+    font-size: 35px;
+    color: var(--main-color);
+}
+.m_p_r p{
+    font-size: 35px;
+    color: var(--third-color);
+}
+
+.how_to_transfer .circle_n_1, .status_transfer .circle_n_1,
+.payment_receipt .circle_n_1 {
+    width: 120px;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid var(--secondry-color);
+    border-radius: 50%;
+}
+
+.how_to_transfer .circle_n_2, .status_transfer .circle_n_2,
+.payment_receipt .circle_n_2 {
+    width: 105px;
+    height: 105px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid var(--fourth-color);
+    border-radius: 50%;
+}
+
+.how_to_transfer .circle_n_3, .status_transfer .circle_n_3,
+.payment_receipt .circle_n_3 {
+    width: 90px;
+    height: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid var(--main-color);
+    border-radius: 50%;
+}
+
+.circle_n_3 .fa-comments-dollar, .circle_n_3 .fa-money-bill-transfer,
+.circle_n_3 .fa-hand-holding-dollar {
+    font-size: 40px;
+    color: var(--secondry-color);
+}
+/* End Section Style Method Payment */
+
+/* Start Section Style Featurs */
+.features {
+    width: 100%;
+    height: 954px;
+    display: flex;
+    background-image: url("https://cdn.jsdelivr.net/gh/sam-tahiri/ATM@main/img/bg-features.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+.features .container {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.features .container .title h3 {
+    color: var(--secondry-color);
+}
+
+.features .container .title p {
+   color: var(--bg-color);
+}
+
+.features .feature {
+    width: 458px;
+    height: 438px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    right: 300px;
+    padding-bottom: 50px;
+}
+
+.features .feature .mine-title {
+    width: fit-content;
+    display: flex;
+    align-items: center;
+}
+
+.features .feature .mine-title .fa-wallet {
+    padding: 6px;
+    border-radius: 50%;
+    font-size: 35px;
+    color: var(--main-color);
+    background-color: var(--bg-color);
+    position: relative;
+    right: 15px;
+}
+
+.features .feature .mine-title span {
+    padding: 0 20px 0 5px;
+    border-radius: 50px 0 0 50px;
+    font-size: 35px;
+    background-color: var(--secondry-color);
+    color: var(--bg-color);
+}
+
+.feature .box-features {
+    width: 408px;
+    height: 326px;
+    position: relative;
+    top: 50px;
+    border: 2px solid var(--bg-color);
+    border-radius: 10px;
+    display: flex;
+    align-self: end;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.feature .box-features div {
+    width: 84%;
+    font-size: 30px;
+    color: var(--bg-color);
+    display: flex;
+    align-items: center;
+}
+.feature .box-features .fa-circle-check {
+    font-size: 55px;
+    color: #00ff4e;
+    padding-left: 20px;
+}
+
+.feature .box-features .fa-gear {
+    padding: 6px;
+    border-radius: 50%;
+    font-size: 40px;
+    color: var(--main-color);
+    background-color: var(--bg-color);
+    position: absolute;
+    right: -7%;
+    top: -9%;
+}
+
+/* End Section Style Featurs */
+
+/* Start Section Style sec-banks */
+
+.sec-banks {
+    width: 100%;
+    height: 1035px;
+    display: flex;
+    background-image: url("https://cdn.jsdelivr.net/gh/sam-tahiri/ATM@main/img/bg-banks.png");
+    background-position: bottom right;
+    background-repeat: no-repeat;
+}
+
+.sec-banks .container {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sec-banks .container .title {
+    text-align: center;
+}
+
+.sec-banks .container .title h3 {
+   color: var(--secondry-color);
+}
+
+.sec-banks .container .title p {
+    color: var(--bg-color);
+    background-color: var(--secondry-color);
+    padding: 5px 15px;
+    border-radius: 50px;
+}
+
+.group-img {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.group-img .box-img {
+    width: 250px;
+    height: 125px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.group-img .box-img img {
+    width: 100px;
+    height: fit-content;
+    display: flex;
+}
+.clear {
+    clear: both;
+}
+/* End Section Style sec-banks */
+
+/* Start Section Style testimonial */
+
+.testimonial {
+    width: 100%;
+    height: auto;
+    background-color: #f3f3f3;
+    display: flex;
+    background-image: url("https://cdn.jsdelivr.net/gh/sam-tahiri/ATM@main/img/bg-testimonial.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 100px;
+    overflow: hidden;
+}
+
+.testimonial .container {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+}
+.testimonial .container .title h3 {
+    color: var(--main-color);
+}
+
+.testimonial .container .title p {
+    color: var(--bg-color);
+    background-color: var(--main-color);
+    text-align: center;
+    padding: 3px 15px;
+    border-radius: 50px;
+}
+
+
+.comments {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.swiper {
+    width: 100%;
+    display: flex;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    transition-duration: 0ms;
+  }
+
+  .swiper-slide {
+    width: 420px !important;
+    height: 235px;
+    box-shadow: 0 8px 21px rgb(0, 0, 0, 0.1);
+    border-radius: 10px;
+    margin: 0 20px !important;
+    filter: blur(4px);
+  }
+
+  .swiper-slide-active {
+      filter: blur(0);
+  }
+
+  .swiper-3d .swiper-slide-shadow-left, .swiper-slide-shadow-right {
+      display: none;
+  }
+
+.comments {
+    width: 100%;
+    display: flex;
+    margin-top: 50px;
+}
+
+.comments .comment {
+    position: relative;
+    width: 420px;
+    height: 235px;
+    background-color: #e5e5e5;
+    border-radius: 10px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.comments .comment .fa-quote-right {
+    position: absolute;
+    color: var(--main-color);
+    top: 5px;
+    right: 8px;
+    font-size: 25px;
+}
+
+.comments .comment .fa-quote-left {
+    position: absolute;
+    color: var(--main-color);
+    bottom: 5px;
+    left: 8px;
+    font-size: 25px;
+}
+
+.comments .comment .user {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 15px 15px;
+}
+
+
+.comments .comment .user .avatar {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    outline: 4px solid #fe7006;
+}
+.comments .comment .user .name {
+    font-size: 33px;
+    color: var(--secondry-color);
+    margin-right: 10px;
+}
+
+.comments .comment .text-comment {
+    color: #adaaaa;
+    font-size: 18px;
+    padding: 0 15px;
+}
+
+/* End Section Style testimonial */
+
+/* Start Section Style contact-info */
+
+.contact-info {
+    width: 100%;
+    height: 477px;
+    background-color: #424242;
+    background-image: url(/img/bg-contact.png);
+    background-position: right bottom;
+    background-repeat: no-repeat;
+    display: flex;
+}
+.contact-info .container {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.contact-info .container .sec {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    color: var(--bg-color);
+    font-size: 24px;
+}
+
+.contact-info .container .sec > div {
+    width: calc(90% / 3);
+}
+
+.contact-info .container .sec div h4 {
+    color: var(--secondry-color);
+    font-size: 30px;
+    letter-spacing: 2.3 ;
+}
+
+.contact-info .container .sec .company .logo {
+    width: 100px;
+}
+
+.contact-info .container .sec .links {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-info .container .sec .links a {
+    color: var(--bg-color);
+    padding: 4px 0;
+}
+
+.contact-info .btn-social {
+    width: 100%;
+    height: auto;
+    display: flex;
+    margin-top: 10px;
+}
+
+.contact-info .btn-social .btn-face, .contact-info .btn-social .btn-whats {
+    width: 150px;
+    height: 50px;
+    border: 2px solid var(--bg-color);
+    border-radius: 10px;
+    display: inline-flex;
+    align-items: center;
+}
+
+.contact-info .btn-social .btn-face {
+    margin-left: 45px;
+}
+
+
+.contact-info .btn-social .btn-face .icon, .contact-info .btn-whats .icon {
+    width: 30%;
+    height: 100%;
+    background-color: var(--secondry-color);
+    border-radius: 0 8px 8px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-info .btn-social .btn-whats .icon {
+    background-color: transparent;
+}
+
+.contact-info .btn-social .btn-face .name-page,
+.contact-info .btn-social .btn-whats .name-page {
+    width: 70%;
+    height: 100%;
+    border-radius: 8px 0 0 8px;
+    padding: 13px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-info .btn-social .btn-face:hover,
+.contact-info .btn-social .btn-whats:hover {
+    transition: 0.5s ease;
+    box-shadow: 0 0 10px var(--bg-color);
+    box-shadow: 0 0 20px var(--bg-color);
+    box-shadow: 0 0 40px var(--bg-color);
+}
+
+
+.contact-info .btn-social .btn-whats .name-page {
+    background-color: var(--bg-color);
+    color: var(--third-color);
+}
+
+.contact-info .btn-social .btn-face .name-page a, .contact-info .btn-whats .name-page a{
+    width: 103.24px;
+    height: 47.5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.5s;
+}
+
+
+.contact-info .btn-social .btn-face a {
+    color: var(--bg-color);
+}
+
+.contact-info .btn-social .btn-whats a {
+    color: #424242;
+}
+
+
+
+
+
+/* End Section Style contact-info */
+
+
+/* Start Section Style Footer */
+
+.footer {
+    width: 100%;
+    height: 100px;
+    background-color: var(--secondry-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer .copyright {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 35px;
+    color: var(--bg-color);
+}
+
+/* End Section Style Footer */
+
+/* Start Section Media Screen */
+/* Mobile */
+
+@media (max-width: 576px) {
+    .container {
+        width: 540px;
+    }
+
+    .title h3 {
+        font-size: 40px;
+    }
+
+    .title p {
+        font-size: 28px;
+    }
+
+    .title p br{
+        display: none;
+    }
+
+    .our_offices .offices .content .country .name_country {
+        color: var(--main-color);
+        font-size: 30px !important;
+    }
+    
+    .our_offices .offices .content .country .name_street {
+        color: var(--bg-color);
+        font-size: 28px !important;
+    }
+
+    /* ------------------------- banks -------------------------- */
+    .group-img {
+        width: 100%;
+        flex-wrap: wrap;
+    }
+    
+    .group-img .box-img {
+        width: calc(80% / 2) !important;
+        height: 200px;
+    }
+    
+    .group-img .box-img img {
+        width: 50%;
+        height: fit-content;
+        display: flex;
+    }
+
+    /* ------------------------- features -------------------------- */
+    .features .container .title h3 {font-size: 40px;}
+    
+    .features .container .title p {font-size: 16px;}
+    .features .feature {
+        width: 331px !important;
+        height: 438px;
+        justify-content: center;
+    }
+
+
+    .features .feature .mine-title .fa-wallet {
+        padding: 6px;
+        border-radius: 50%;
+        font-size: 33px !important;
+        right: 13px !important;
+    }
+    
+    .features .feature .mine-title span {
+        padding: 0 20px 0 5px;
+        border-radius: 50px 0 0 50px;
+        font-size: 25px !important;
+
+    }
+    
+    .feature .box-features {
+        width: 300px !important;
+        height: 270px !important;
+    }
+    
+    .feature .box-features div {
+        font-size: 20px !important;
+    }
+    .feature .box-features .fa-circle-check {
+        font-size: 47px !important;
+        padding-left: 20px;
+    }
+    
+    .feature .box-features .fa-gear {
+        font-size: 25px !important;
+        right: -6%;
+        top: -7%;
+    }
+    /* ---------------------------- footer --------------------------*/
+    .footer .copyright {
+        font-size: 25px;
+    }
+
+}
+
+@media (max-width: 280px) {
+    .container {
+        width: 250px !important;
+    }
+    .features .container .title h3 {font-size: 40px;}
+    
+    .features .container .title p {font-size: 16px;}
+
+    .features .feature {
+        max-width: 250px !important;
+    }
+
+    .features .feature .mine-title .fa-wallet {
+        font-size: 33px !important;
+        right: 13px !important;
+    }
+    
+    .features .feature .mine-title span {font-size: 17px !important;}
+    
+    .feature .box-features {
+        width: 250px !important;
+        height: 250px !important;
+    }
+    
+    .feature .box-features div {
+        font-size: 18px !important;
+    }
+    .feature .box-features .fa-circle-check {font-size: 30px !important;}
+    
+    .feature .box-features .fa-gear {
+        font-size: 25px !important;
+        right: -6%;
+        top: -7%;
+    }
+    
+}
+
+
+@media (max-width: 767px) {
+    .container {
+        width: 100%;
+    }
+
+    .header .main-nav, .header .contact {display: none;}
+
+    .header .nav-phone.active {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .our_service .container .services .serv {
+        flex-direction: column !important;
+        justify-content: space-evenly !important;
+    }
+    .our_service .container .services .serv div {
+        width: 100% !important;
+        height: 460px !important;
+    }
+
+    .serv div .sircle01 {
+        width: 200px !important;
+        height: 200px !important;
+    }
+
+    .serv div .sircle02 {
+        width: 170px !important;
+        height: 170px !important;
+    }
+
+    .serv div .sircle01 .sircle02 > .icon {font-size: 79px;}
+
+    .serv div h4 {font-size: 50px !important}
+
+    .serv div p {font-size: 45px;}
+
+    /* ------------------------------ payment ----------------------------- */
+
+    .m_p_r > div {
+        margin-bottom: 50px;
+    }
+
+    /* ------------------------------ features ----------------------------- */
+
+    .features { padding-bottom: 50px;}
+
+    /* ----------------------------- contact-info ---------------------------*/
+
+    .contact-info {
+        width: 100%;
+        height: auto;
+        background-color: #424242;
+        background-image: url(/img/bg-contact.png);
+        background-position: right bottom;
+        background-repeat: no-repeat;
+        display: flex;
+        padding-bottom: 50px;
+    }
+    .contact-info .container {
+        height: 100%;
+        display: flex;
+        align-items: center;
+    }
+    
+    .contact-info .container .sec {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: var(--bg-color);
+        font-size: 24px;
+        margin: 50px 0;
+    }
+    
+    .contact-info .container .sec > div {
+        width: 80%;
+        margin-top: 25px;
+    }
+
+
+     .contact-info .btn-social {
+        flex-direction: row !important;
+     }
+    
+}
+
+/* Start Small Screen  Tablet*/
+
+@media (min-width: 768px) {
+    .container {
+        width: 720px;
+        position: relative;
+    }
+
+}
+
+@media (max-width: 991px) {
+
+    .header .main-nav, .contact {display: none;}
+
+    .next, .prev {
+        display: none;
+    }
+
+    .nav-phone.active {
+        width: 50%;
+        z-index: 10;
+    }
+
+    .our_service .container .services {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .our_service .container .services .serv {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        order: 2;
+    }
+
+    .our_service .container .services .serv div {
+        width: 45%;
+        height: 221px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 150px;
+
+    }
+
+    .our_service .container .services .img-panner {
+        width: 100%;
+        height: 584px;
+        display: flex;
+        order: 1;
+        margin-bottom: 150px;
+    }
+
+    /* --------------------------- our_offices ------------------------------- */
+    .our_offices {
+        height: auto !important;
+    }
+
+    .our_offices .offices .content {
+        flex-wrap: wrap;
+    }
+    
+    .our_offices .offices .content:nth-child(3) {
+        margin-bottom: 50px;
+    }
+    
+    .our_offices .offices .content .country {
+        width: calc(95% / 2) !important;
+    }
+
+    .our_offices .offices .content .country:nth-child(3),
+    .our_offices .offices .content .country:nth-child(4) {
+        margin-top: 50px !important;
+    }
+
+    .method_payment {
+        height: auto;
+    }
+    .m_p_r {
+        width: 100%;
+        flex-direction: column !important;
+    }
+
+    .arrow_01, .arrow_02 {
+        display: none !important;
+    }
+
+    /* ---------------------------------------------- */
+    
+    .features {height: auto;}
+
+    /* ---------------------------- banks ----------------------------*/
+
+    .sec-banks {
+        height: auto;
+    }
+    .group-img {
+        width: 100%;
+        flex-wrap: wrap;
+    }
+    
+    .group-img .box-img {
+        width: calc(80% / 3);
+        height: 200px;
+    }
+    
+    .group-img .box-img img {
+        width: 50%;
+        height: fit-content;
+        display: flex;
+    }
+
+    /* ---------------------------- contact-info ----------------------------*/
+
+    .contact-info .btn-social {
+        margin-top: 10px;
+        flex-direction: column;
+    }
+
+    .contact-info .btn-social > div{
+        margin-top: 10px;
+    }
+}
+
+/* End Small Screen */
+
+/* Medium Screen */
+@media (min-width: 992px) {
+    .container {
+        width: 960px;
+    }
+    .header .menu-phone, .header .nav-phone {display: none;}
+    .header .main-nav, .contact {display: flex;}
+
+    .our_service .container .services .serv {
+        flex-grow: 1;
+    }
+    /* -------------------------------------------------------- */
+    .arrow_01 {
+        width: 100px;
+        height: 100%;
+        position: relative;
+        top: -130px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .arrow_02 {
+        width: 100px;
+        height: 100%;
+        position: relative;
+        top: -90px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media (max-width: 1200px) {
+
+    .contact-info .btn-social .btn-face {
+        margin-left: 10px;
+    }
+    
+    .features {align-items: center;}
+
+    .features .feature {position: unset;}
+    
+
+    .features .feature .mine-title {
+        position: relative;
+        right: -13px;
+    }
+    
+    .features .feature .mine-title .fa-wallet {
+        font-size: 35px;
+        right: 15px;
+    }
+    
+    .features .feature .mine-title span {font-size: 30px;}
+    
+    .feature .box-features {align-self:center;}
+
+}
+
+/* X Large Screen */
+@media (min-width: 1200px) {
+    .container {
+        width: 1140px;
+    }
+
+    .our_service .container .services .serv {
+        flex-grow: 0;
+    }
+    /* --------------------------- payment ------------------------------- */
+    .arrow_01 {
+        width: 100px;
+        height: 100%;
+        position: relative;
+        top: -100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .arrow_02 {
+        width: 100px;
+        height: 100%;
+        position: relative;
+        top: -70px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+/* XX Large Screen */
+
+@media (min-width: 1400px) {
+    .container {
+        width: 1320px;
+    }
+
+}
+
+/* End Media Screen */
