@@ -701,7 +701,7 @@ a {
   .swiper-slide {
     width: 420px !important;
     height: 235px;
-    box-shadow: 0 8px 21px rgb(0, 0, 0, 0.1);
+    box-shadow: none;
     border-radius: 10px;
     margin: 0 20px !important;
     filter: blur(4px);
@@ -1470,7 +1470,7 @@ a {
     }
 
     .comments .comment .user .name {
-        font-size: 26px;
+        font-size: 20px;
     }
 
     .comments .comment .text-comment {
