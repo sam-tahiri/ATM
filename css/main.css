@@ -933,139 +933,6 @@ a {
 
 /* Start Section Media Screen */
 /* Mobile */
-
-@media (max-width: 576px) {
-    .container {
-        width: 540px;
-    }
-
-    .title h3 {
-        font-size: 40px;
-    }
-
-    .title p {
-        font-size: 28px;
-    }
-
-    .title p br{
-        display: none;
-    }
-
-    .our_offices .offices .content .country .name_country {
-        color: var(--main-color);
-        font-size: 30px !important;
-    }
-    
-    .our_offices .offices .content .country .name_street {
-        color: var(--bg-color);
-        font-size: 28px !important;
-    }
-
-    /* ------------------------- banks -------------------------- */
-    .group-img {
-        width: 100%;
-        flex-wrap: wrap;
-    }
-    
-    .group-img .box-img {
-        width: calc(80% / 2) !important;
-        height: 200px;
-    }
-    
-    .group-img .box-img img {
-        width: 50%;
-        height: fit-content;
-        display: flex;
-    }
-
-    /* ------------------------- features -------------------------- */
-    .features .container .title h3 {font-size: 40px;}
-    
-    .features .container .title p {font-size: 16px;}
-    .features .feature {
-        width: 331px !important;
-        height: 438px;
-        justify-content: center;
-    }
-
-
-    .features .feature .mine-title .fa-wallet {
-        padding: 6px;
-        border-radius: 50%;
-        font-size: 33px !important;
-        right: 13px !important;
-    }
-    
-    .features .feature .mine-title span {
-        padding: 0 20px 0 5px;
-        border-radius: 50px 0 0 50px;
-        font-size: 25px !important;
-
-    }
-    
-    .feature .box-features {
-        width: 300px !important;
-        height: 270px !important;
-    }
-    
-    .feature .box-features div {
-        font-size: 20px !important;
-    }
-    .feature .box-features .fa-circle-check {
-        font-size: 47px !important;
-        padding-left: 20px;
-    }
-    
-    .feature .box-features .fa-gear {
-        font-size: 25px !important;
-        right: -6%;
-        top: -7%;
-    }
-    /* ---------------------------- footer --------------------------*/
-    .footer .copyright {
-        font-size: 25px;
-    }
-
-}
-
-@media (max-width: 280px) {
-    .container {
-        width: 250px !important;
-    }
-    .features .container .title h3 {font-size: 40px;}
-    
-    .features .container .title p {font-size: 16px;}
-
-    .features .feature {
-        max-width: 250px !important;
-    }
-
-    .features .feature .mine-title .fa-wallet {
-        font-size: 33px !important;
-        right: 13px !important;
-    }
-    
-    .features .feature .mine-title span {font-size: 17px !important;}
-    
-    .feature .box-features {
-        width: 250px !important;
-        height: 250px !important;
-    }
-    
-    .feature .box-features div {
-        font-size: 18px !important;
-    }
-    .feature .box-features .fa-circle-check {font-size: 30px !important;}
-    
-    .feature .box-features .fa-gear {
-        font-size: 25px !important;
-        right: -6%;
-        top: -7%;
-    }
-    
-}
-
-
 @media (max-width: 767px) {
     .container {
         width: 100%;
@@ -1157,13 +1024,110 @@ a {
 
 /* Start Small Screen  Tablet*/
 
-@media (min-width: 768px) {
+
+/* XX Large Screen */
+
+
+
+@media (min-width: 992px) {
     .container {
-        width: 720px;
+        width: 960px;
+    }
+    .header .menu-phone, .header .nav-phone {display: none;}
+    .header .main-nav, .contact {display: flex;}
+
+    .our_service .container .services .serv {
+        flex-grow: 1;
+    }
+    /* -------------------------------------------------------- */
+    .arrow_01 {
+        width: 100px;
+        height: 100%;
         position: relative;
+        top: -130px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .arrow_02 {
+        width: 100px;
+        height: 100%;
+        position: relative;
+        top: -90px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+
+
+/* X Large Screen */
+@media (min-width: 1200px) {
+    .container {
+        width: 1140px;
     }
 
+    .our_service .container .services .serv {
+        flex-grow: 0;
+    }
+    /* --------------------------- payment ------------------------------- */
+    .arrow_01 {
+        width: 100px;
+        height: 100%;
+        position: relative;
+        top: -100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .arrow_02 {
+        width: 100px;
+        height: 100%;
+        position: relative;
+        top: -70px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 }
+
+@media (min-width: 1400px) {
+    .container {
+        width: 1320px;
+    }
+}
+
+@media (max-width: 1200px) {
+
+    .contact-info .btn-social .btn-face {
+        margin-left: 10px;
+    }
+    
+    .features {align-items: center;}
+
+    .features .feature {position: unset;}
+    
+
+    .features .feature .mine-title {
+        position: relative;
+        right: -13px;
+    }
+    
+    .features .feature .mine-title .fa-wallet {
+        font-size: 35px;
+        right: 15px;
+    }
+    
+    .features .feature .mine-title span {font-size: 30px;}
+    
+    .feature .box-features {align-self:center;}
+
+}
+
+/* Medium Screen */
 
 @media (max-width: 991px) {
 
@@ -1286,106 +1250,262 @@ a {
     }
 }
 
+
 /* End Small Screen */
 
-/* Medium Screen */
-@media (min-width: 992px) {
-    .container {
-        width: 960px;
-    }
-    .header .menu-phone, .header .nav-phone {display: none;}
-    .header .main-nav, .contact {display: flex;}
-
-    .our_service .container .services .serv {
-        flex-grow: 1;
-    }
-    /* -------------------------------------------------------- */
-    .arrow_01 {
-        width: 100px;
-        height: 100%;
-        position: relative;
-        top: -130px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    
-    .arrow_02 {
-        width: 100px;
-        height: 100%;
-        position: relative;
-        top: -90px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-}
-
-@media (max-width: 1200px) {
-
-    .contact-info .btn-social .btn-face {
-        margin-left: 10px;
-    }
-    
-    .features {align-items: center;}
-
-    .features .feature {position: unset;}
-    
-
-    .features .feature .mine-title {
-        position: relative;
-        right: -13px;
-    }
-    
-    .features .feature .mine-title .fa-wallet {
-        font-size: 35px;
-        right: 15px;
-    }
-    
-    .features .feature .mine-title span {font-size: 30px;}
-    
-    .feature .box-features {align-self:center;}
-
-}
-
-/* X Large Screen */
-@media (min-width: 1200px) {
-    .container {
-        width: 1140px;
-    }
-
-    .our_service .container .services .serv {
-        flex-grow: 0;
-    }
-    /* --------------------------- payment ------------------------------- */
-    .arrow_01 {
-        width: 100px;
-        height: 100%;
-        position: relative;
-        top: -100px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    
-    .arrow_02 {
-        width: 100px;
-        height: 100%;
-        position: relative;
-        top: -70px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-}
-
-/* XX Large Screen */
-
-@media (min-width: 1400px) {
-    .container {
-        width: 1320px;
-    }
-
-}
-
 /* End Media Screen */
+
+@media (max-width: 576px) {
+    .container {
+        width: 100%;
+    }
+
+    .title h3 {
+        font-size: 40px;
+    }
+
+    .title p {
+        font-size: 28px;
+    }
+
+    .title p br{
+        display: none;
+    }
+
+    .our_offices .offices .content .country .name_country {
+        color: var(--main-color);
+        font-size: 30px !important;
+    }
+    
+    .our_offices .offices .content .country .name_street {
+        color: var(--bg-color);
+        font-size: 28px !important;
+    }
+
+    /* ------------------------- banks -------------------------- */
+    .group-img {
+        width: 100%;
+        flex-wrap: wrap;
+    }
+    
+    .group-img .box-img {
+        width: calc(80% / 2) !important;
+        height: 200px;
+    }
+    
+    .group-img .box-img img {
+        width: 50%;
+        height: fit-content;
+        display: flex;
+    }
+
+    /* ------------------------- features -------------------------- */
+    .features .container .title h3 {font-size: 40px;}
+    
+    .features .container .title p {font-size: 16px;}
+    .features .feature {
+        width: 331px !important;
+        height: 438px;
+        justify-content: center;
+    }
+
+
+    .features .feature .mine-title .fa-wallet {
+        padding: 6px;
+        border-radius: 50%;
+        font-size: 33px !important;
+        right: 13px !important;
+    }
+    
+    .features .feature .mine-title span {
+        padding: 0 20px 0 5px;
+        border-radius: 50px 0 0 50px;
+        font-size: 25px !important;
+
+    }
+    
+    .feature .box-features {
+        width: 300px !important;
+        height: 270px !important;
+    }
+    
+    .feature .box-features div {
+        font-size: 20px !important;
+    }
+    .feature .box-features .fa-circle-check {
+        font-size: 47px !important;
+        padding-left: 20px;
+    }
+    
+    .feature .box-features .fa-gear {
+        font-size: 25px !important;
+        right: -6%;
+        top: -7%;
+    }
+    /* ---------------------------- footer --------------------------*/
+    .footer .copyright {
+        font-size: 25px;
+    }
+
+}
+
+@media (max-width: 320px) {
+    .container {
+        width: 250px !important;
+    }
+
+    .title h3 {
+        font-size: 28px !important;
+    }
+    .title p {
+        font-size: 17px !important;
+    }
+
+    .dotsbox {bottom: 3px !important;}
+    .dotsbox .dot {width: 23px;}
+
+    .services .img-panner {
+        height: 200px !important;
+        margin-bottom: 150px !important;
+    }
+
+    .img-panner .img-sec {
+        height: 200px !important;
+    }
+
+    .serv div {
+        max-width: 100% !important;
+        max-height: 271px !important;
+    }
+
+    .serv div .sircle01 .sircle02 > .icon {
+        font-size: 46px;
+    }
+    .serv div .sircle01 {
+        width: 120px !important;
+        height: 120px !important;
+    }
+    .serv div .sircle02 {
+        width: 100px !important;
+        height: 100px !important;
+    }
+
+    .serv div h4, .serv div p  {
+        position: relative;
+        top: 20px;
+        font-size: 35px !important;
+    }
+
+
+    .serv div p br{
+        display: none;
+    }
+
+    .our_offices .offices .content .country {
+        width: 100% !important;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    .m_p_r p {
+        font-size: 21px !important;
+    }
+      /* ----------------------------- features -----------------------------*/
+      .features .container .title h3 {font-size: 40px;}
+    
+      .features .container .title p {font-size: 16px;}
+  
+      .features .feature {
+          max-width: 250px !important;
+      }
+  
+      .features .feature .mine-title .fa-wallet {
+          font-size: 33px !important;
+          right: 13px !important;
+      }
+      
+      .features .feature .mine-title span {font-size: 17px !important;}
+      
+      .feature .box-features {
+          width: 250px !important;
+          height: 250px !important;
+      }
+      
+      .feature .box-features div {
+          font-size: 18px !important;
+      }
+      .feature .box-features .fa-circle-check {font-size: 30px !important;}
+      
+      .feature .box-features .fa-gear {
+          font-size: 25px !important;
+          right: -6%;
+          top: -7%;
+      }
+
+      .comments {
+        justify-content: center;
+    }
+      .swiper-slide {
+        display: flex;
+        justify-content: center;
+      }
+      .comments .comment {
+        position: relative;
+        width: 211px;
+        height: 188px;
+        background-color: #e5e5e5;
+        border-radius: 10px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .comments .comment .user .avatar {
+        width: 50px;
+        height: 50px;
+    }
+
+    .comments .comment .fa-quote-right, .comments .comment .fa-quote-left {
+        font-size: 20px;
+    }
+
+    .comments .comment .user .name {
+        font-size: 26px;
+    }
+
+    .comments .comment .text-comment {
+        font-size: 15px;
+    }
+
+
+      /* ---------------------------- contact --------------------------*/
+  
+      .contact-info .btn-social {
+          width: fit-content;
+      }
+  
+      .contact-info .btn-social .btn-face, .contact-info .btn-social .btn-whats {
+      width: 100px;
+      height: 50px;
+      border: 2px solid var(--bg-color);
+      border-radius: 10px;
+      display: inline-flex;
+      align-items: center;
+  }
+  
+      .contact-info .btn-social .btn-face a, .contact-info .btn-social .btn-whats a {
+      font-size: 17px;
+  
+      .footer .copyright > span{
+          font-size: 21px !important;
+      }
+  }
+
+  .footer .copyright {
+    font-size: 21px !important;
+}
+}
+  
+   
+
+
