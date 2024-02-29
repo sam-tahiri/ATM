@@ -309,7 +309,7 @@ a {
     width: 100%;
     height: 817px;
     display: flex;
-    background-image: url(/img/sec-our-office.jpg);
+    background-image: url("https://cdn.jsdelivr.net/gh/sam-tahiri/ATM@main/img/sec-our-office.jpg");
     background-position: center;
     background-size: cover;
 }
@@ -401,7 +401,7 @@ a {
 .method_payment {
     width: 100%;
     height: auto;
-    background-image: url("/img/bg-payment.png");
+    background-image: url("https://cdn.jsdelivr.net/gh/sam-tahiri/ATM@main/img/bg-payment.png");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: right top;
@@ -495,7 +495,7 @@ a {
     width: 100%;
     height: 954px;
     display: flex;
-    background-image: url("/img/bg-features.jpg");
+    background-image: url("https://cdn.jsdelivr.net/gh/sam-tahiri/ATM@main/img/bg-features.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -597,7 +597,7 @@ a {
     width: 100%;
     height: 1035px;
     display: flex;
-    background-image: url(/img/bg-banks.png);
+    background-image: url("https://cdn.jsdelivr.net/gh/sam-tahiri/ATM@main/img/bg-banks.png");
     background-position: bottom right;
     background-repeat: no-repeat;
 }
@@ -655,7 +655,7 @@ a {
     height: auto;
     background-color: #f3f3f3;
     display: flex;
-    background-image: url(/img/bg-testimonial.png);
+    background-image: url("https://cdn.jsdelivr.net/gh/sam-tahiri/ATM@main/img/bg-testimonial.png");
     background-repeat: no-repeat;
     background-size: cover;
     padding-bottom: 100px;
