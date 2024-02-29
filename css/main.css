@@ -6,7 +6,7 @@
 
 @font-face {
     font-family: "Hacen Tunisia" ;
-    src: url("font/Hacen Tunisia.ttf") format("ttf");
+    src: url("https://cdn.jsdelivr.net/gh/sam-tahiri/ATM@main/font/Hacen%20Tunisia.ttf") format("ttf");
 }
 
 :root {
