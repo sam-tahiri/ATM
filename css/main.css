@@ -720,6 +720,7 @@ a {
     flex-direction: column;
     align-items: center;
     overflow: hidden;
+    z-index: 2;
 }
 .testimonial .container .title h3 {
     color: var(--main-color);
@@ -757,6 +758,8 @@ a {
     border-radius: 10px;
     margin: 0 20px !important;
     filter: blur(4px);
+    display: flex;
+    justify-content: center;
   }
 
   .swiper-slide-active {
@@ -833,7 +836,7 @@ a {
     width: 100%;
     height: 477px;
     background-color: #424242;
-    background-image: url("https://cdn.jsdelivr.net/gh/sam-tahiri/ATM@main/img/bg-contact.png");
+    background-image: url(/img/bg-contact.png);
     background-position: right bottom;
     background-repeat: no-repeat;
     display: flex;
@@ -1394,6 +1397,12 @@ a {
         right: -6%;
         top: -7%;
     }
+    /* ---------------------------- Testimonianl --------------------------*/
+
+    .comments .comment {
+        width: 355px;
+    }
+
     /* ---------------------------- footer --------------------------*/
     .footer .copyright {
         font-size: 25px;
@@ -1493,14 +1502,12 @@ a {
           right: -6%;
           top: -7%;
       }
-
+      .testimonial {
+        padding-bottom: 0;
+      }
       .comments {
         justify-content: center;
     }
-      .swiper-slide {
-        display: flex;
-        justify-content: center;
-      }
       .comments .comment {
         position: relative;
         width: 211px;
