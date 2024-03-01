@@ -249,13 +249,13 @@ a {
     position: relative;
 }
 
-.serv div .sircle01, .sircle02 {
+.serv div .circle01, .circle02 {
     display: flex;
     justify-content: center;
     align-items: center;
 
 }
-.serv div .sircle01 {
+.serv div .circle01 {
     width: 95px;
     height: 95px;
     background-color: var(--fourth-color);
@@ -267,7 +267,7 @@ a {
     overflow: hidden;
 }
 
-.serv div > .sircle01::before {
+.serv div > .circle01::before {
     content: '';
     background-color: var(--bg-color);
     position: absolute;
@@ -276,7 +276,7 @@ a {
 
 }
 
-.serv div > .sircle01::after {
+.serv div > .circle01::after {
     content: '';
     background-color: var(--bg-color);
     position: absolute;
@@ -286,7 +286,7 @@ a {
 
 
 
-.serv div .sircle02 {
+.serv div .circle02 {
     width: 80px;
     height: 80px;
     background-color:  var(--secondry-color);
@@ -296,7 +296,7 @@ a {
     position: relative;
 }
 
-.serv div .sircle02::before {
+.serv div .circle02::before {
     content: '';
     background-color: var(--bg-color);
     position: absolute;
@@ -305,7 +305,7 @@ a {
 
 }
 
-.serv div .sircle02::after {
+.serv div .circle02::after {
     content: '';
     background-color: var(--bg-color);
     position: absolute;
@@ -314,7 +314,7 @@ a {
 }
 
 
-.serv div .sircle01 .sircle02 > .icon {
+.serv div .circle01 .circle02 > .icon {
     font-size: 40px;
     color: var(--main-color);
     z-index: 55;
@@ -1009,17 +1009,17 @@ a {
         height: 460px !important;
     }
 
-    .serv div .sircle01 {
+    .serv div .circle01 {
         width: 200px !important;
         height: 200px !important;
     }
 
-    .serv div .sircle02 {
+    .serv div .circle02 {
         width: 170px !important;
         height: 170px !important;
     }
 
-    .serv div .sircle01 .sircle02 > .icon {font-size: 79px;}
+    .serv div .circle01 .circle02 > .icon {font-size: 79px;}
 
     .serv div h4 {font-size: 50px !important}
 
@@ -1439,14 +1439,14 @@ a {
         max-height: 271px !important;
     }
 
-    .serv div .sircle01 .sircle02 > .icon {
+    .serv div .circle01 .circle02 > .icon {
         font-size: 46px;
     }
-    .serv div .sircle01 {
+    .serv div .circle01 {
         width: 120px !important;
         height: 120px !important;
     }
-    .serv div .sircle02 {
+    .serv div .circle02 {
         width: 100px !important;
         height: 100px !important;
     }
